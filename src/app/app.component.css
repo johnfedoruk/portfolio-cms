@@ -1,0 +1,5 @@
+.name, .email {
+	color: white;
+    font-size: 17px !important;
+	text-shadow: rgba(0,0,0,.7) 0 0 2px;
+}
