@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as $ from 'jquery';
+declare const jQuery: any;
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,11 @@ import * as $ from 'jquery';
 })
 export class AppComponent implements OnInit {
 	ngOnInit(): void {
-		$("#title").fadeOut(1000);
-		setTimeout(()=>{
-			$("#title").fadeIn(1000);
-		},1000);
+		// $("#title").fadeOut(1000);
+		// setTimeout(()=>{
+		// 	$("#title").fadeIn(1000);
+		// },1000);
+		jQuery('.carousel').carousel();
 	}
 	title = 'app works!';
 }
