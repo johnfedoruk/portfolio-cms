@@ -1,0 +1,24 @@
+.name, .email {
+	color: white;
+    font-size: 17px !important;
+	text-shadow: rgba(0,0,0,.7) 0 0 2px;
+}
+ul.side-nav {
+	height: 100vh;
+}
+ul.side-nav.fixed:not(:hover) .user-view {
+	width: 300px;
+}
+ul.side-nav.fixed {
+    overflow: hidden;
+}
+ul.side-nav.fixed:hover {
+    overflow-y: auto;
+}
+.fa.fa-bars {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 20px;
+	color: rgba(0,0,0,.7);
+}
