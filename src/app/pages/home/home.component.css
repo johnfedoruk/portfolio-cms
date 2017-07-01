@@ -2,3 +2,10 @@
 	padding: 20px;
 	color: rgba(0,0,0,0.6);
 }
+.bg-image {
+    height: 200px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

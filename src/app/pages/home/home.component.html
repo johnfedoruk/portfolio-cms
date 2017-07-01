@@ -1,9 +1,114 @@
+<div class="row">
+	<div class="col m6 s12">
+		<div class="row">
+			<div class="col s12">
+				<div class="card horizontal">
+					<div class="card-image bg-image" style="background-image:url(https://justeatit.johnfedoruk.ca/assets/images/profile-photos/johnny-london.jpg)">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<span class="card-title">John Fedoruk</span>
+							<p>Lorem ipsum lorem ipsum lorem...</p>
+						</div>
+						<div class="card-action">
+							<a href="#" class="blue-text">Manage Account</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col xl6 l12">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://justeatit.johnfedoruk.ca/assets/images/cover-photos/nerd.jpg">
+						<span class="card-title">New Post</span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-plus"></i></a>
+					</div>
+					<div class="card-content">
+						<p>Let's create a new profile post!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col xl6 l12">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Upload Images</span>
+						<p>Create a new album or just upload some images</p>
+					</div>
+					<div class="card-action">
+						<a href="#" class="blue-text">Upload</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col m6 s12">
+
+		<div class="row">
+
+			<div class="col s12">
+
+				<div class="card">
+					<div class="card-content blue white-text">
+						<h3>Statistics</h3>
+					</div>
+					<div class="card-tabs">
+						<ul class="tabs tabs-fixed-width blue tabs-transparent">
+							<li class="tab"><a href="#test4">Traffic</a></li>
+							<li class="tab"><a class="active" href="#test5">Git</a></li>
+							<li class="tab"><a href="#test6">Messages</a></li>
+						</ul>
+					</div>
+					<div class="card-content">
+						<div id="test4">Test 1</div>
+						<div id="test5">Test 2</div>
+						<div id="test6">Test 3</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col s12">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Settings</span>
+					</div>
+					<div class="card-action">
+						<a href="#" class="blue-text">Settings 1</a>
+						<a href="#" class="blue-text">Settings 2</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
 <h3 class="section-title">Posts</h3>
 <div class="row">
 	<div class="col l3 m6 s12" *ngFor="let card of cards; let i = index">
 		<div class="card">
 			<div class="card-image waves-effect waves-block waves-light">
 				<img class="activator" src="http://lorempixel.com/45{{i}}/30{{i}}/city/">
+			</div>
+			<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">Card Title<i class="fa fa-ellipsis-v right"></i></span>
+				<p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-close right"></i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<h3 class="section-title">Albums</h3>
+<div class="row">
+	<div class="col l3 m6 s12" *ngFor="let card of cards; let i = index">
+		<div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="http://lorempixel.com/45{{i}}/30{{i}}/technics/">
 			</div>
 			<div class="card-content">
 				<span class="card-title activator grey-text text-darken-4">Card Title<i class="fa fa-ellipsis-v right"></i></span>
