@@ -11,7 +11,20 @@ ul.side-nav.fixed:not(:hover) .user-view {
 }
 ul.side-nav.fixed {
     overflow: hidden;
+	top: 40px;
+	height: calc( 100vh - 40px );
+	z-index: 999;
 }
+ul.side-nav:not(.fixed) {
+	z-index: 1001;
+}
+
+@media(max-width:992px) {
+	ul.side-nav.fixed {
+		z-index: 1001;
+	}
+}
+
 ul.side-nav.fixed:hover {
     overflow-y: auto;
 }
@@ -24,4 +37,10 @@ ul.side-nav.fixed:hover {
 	left: 10px;
 	font-size: 20px;
 	color: rgba(0,0,0,.7);
+	z-index: 1001;
+}
+@media(min-width:993px) {
+	.button-collapse {
+		display: none;
+	}
 }
