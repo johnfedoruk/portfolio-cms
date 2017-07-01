@@ -15,10 +15,13 @@ ul.side-nav.fixed {
 ul.side-nav.fixed:hover {
     overflow-y: auto;
 }
+.fa {
+	color: rgba(0,0,0,.7);
+}
 .fa.fa-bars {
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 10px;
+	left: 10px;
 	font-size: 20px;
 	color: rgba(0,0,0,.7);
 }

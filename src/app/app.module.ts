@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SideMenuComponent } from './partials/side-menu/side-menu.component';
+import { TopMenuComponent } from './partials/top-menu/top-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,
