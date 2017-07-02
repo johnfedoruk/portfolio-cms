@@ -16,6 +16,14 @@ const routes:Routes = [
 	{
 		path:"",
 		component:HomeComponent
+	},
+	{
+		path:"posts",
+		component:PostsComponent
+	},
+	{
+		path:"albums",
+		component:AlbumsComponent
 	}
 ];
 
