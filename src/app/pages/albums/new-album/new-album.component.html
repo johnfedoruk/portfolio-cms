@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+			<a class="waves-effect waves-red btn-flat" (click)="onExitModal('#postModal')">Exit</a>
 			<a class="waves-effect waves-green btn-flat" (click)="onSelectPost()">Select</a>
 		</div>
 	</div>
@@ -68,7 +68,7 @@
 						<div class="file-field input-field">
 							<div class="btn blue">
 								<span class="white-text">File</span>
-								<input type="file" (change)="onFileAttach($event)">
+								<input type="file" name="media_file" [(ngModel)]="media_file" (change)="onFileAttach($event)">
 							</div>
 							<div class="file-path-wrapper">
 								<input class="file-path validate" type="text" name="media_path" [(ngModel)]="media_path">
@@ -91,7 +91,7 @@
 				</form>
 			</div>
 			<div class="modal-footer">
-				<a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+				<a class="waves-effect waves-red btn-flat" (click)="onExitModal('#mediaModal')">Exit</a>
 				<button class="waves-effect waves-green btn-flat" (click)="onSaveMedia()" [disabled]="!f.valid||!this.media_file">Save</button>
 			</div>
 		</div>
@@ -101,7 +101,7 @@
 				<h4>Delete {{cards[delete_index]?.title}}</h4>
 			</div>
 			<div class="modal-footer">
-				<a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+				<button class="waves-effect waves-red btn-flat" (click)="onExitModal('#deleteMediaModal')">Exit</button>
 				<button class="waves-effect waves-green btn-flat" (click)="onDeleteMedia()">Delete</button>
 			</div>
 		</div>

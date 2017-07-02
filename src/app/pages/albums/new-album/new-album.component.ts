@@ -47,13 +47,13 @@ export class NewAlbumComponent implements OnInit {
 	}
 
 	public onSelectPost():void {
-		jQuery(POST_MODAL).modal('close');
+		this.onExitModal(POST_MODAL);
 	}
 
 	public onDeleteMedia():void {
 		this.cards.splice(this.delete_index,1);
 		this.delete_index = null;
-		jQuery(DEL_MEDIA_MODAL).modal('close');
+		this.onExitModal(DEL_MEDIA_MODAL);
 	}
 
 	public onSaveMedia():void {
@@ -73,7 +73,8 @@ export class NewAlbumComponent implements OnInit {
 		this.media_title = null;
 		this.media_description = null;
 		this.media_path = null;
-		jQuery(MEDIA_MODAL).modal('close');
+		this.media_file = null;
+		this.onExitModal(MEDIA_MODAL);
 	}
 
 	public onFileAttach($event):void {
@@ -85,6 +86,13 @@ export class NewAlbumComponent implements OnInit {
 			this.media_path = "Uploaded!";
 			this.media_file = $event.srcElement.files[0].name;
 		},2000);
+	}
+
+	public onExitModal(id:string):void {
+		console.log(id);
+		let modal = jQuery(id);
+		modal.removeClass("open");
+		modal.fadeOut();
 	}
 
 }
