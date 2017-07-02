@@ -11,6 +11,7 @@ import { TopMenuComponent } from './partials/top-menu/top-menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { AlbumsComponent } from './pages/albums/albums.component';
+import { NewPostComponent } from './pages/posts/new-post/new-post.component';
 
 const routes:Routes = [
 	{
@@ -20,6 +21,10 @@ const routes:Routes = [
 	{
 		path:"posts",
 		component:PostsComponent
+	},
+	{
+		path:"posts/new",
+		component:NewPostComponent
 	},
 	{
 		path:"albums",
@@ -34,7 +39,8 @@ const routes:Routes = [
     TopMenuComponent,
     HomeComponent,
     PostsComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,
