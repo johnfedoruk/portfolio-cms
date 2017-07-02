@@ -27,3 +27,7 @@ textarea.materialize-textarea{
 .switch label input[type=checkbox]:checked+.lever:after {
 	background-color: #75bbff !important;
 }
+
+.tabs .indicator {
+	background-color: dodgerblue;
+}
