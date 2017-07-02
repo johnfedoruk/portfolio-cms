@@ -10,6 +10,7 @@ import { SideMenuComponent } from './partials/side-menu/side-menu.component';
 import { TopMenuComponent } from './partials/top-menu/top-menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PostsComponent } from './pages/posts/posts.component';
+import { AlbumsComponent } from './pages/albums/albums.component';
 
 const routes:Routes = [
 	{
@@ -24,7 +25,8 @@ const routes:Routes = [
     SideMenuComponent,
     TopMenuComponent,
     HomeComponent,
-    PostsComponent
+    PostsComponent,
+    AlbumsComponent
   ],
   imports: [
     BrowserModule,
