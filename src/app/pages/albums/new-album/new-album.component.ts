@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 declare const jQuery:any;
 
+const POST_MODAL:string = "#postModal";
+
 @Component({
 	selector: 'app-new-album',
 	templateUrl: './new-album.component.html',
@@ -15,11 +17,11 @@ export class NewAlbumComponent implements OnInit {
 	}
 
 	public openPostModal():void {
-		jQuery('#postModal').modal('open');
+		jQuery(POST_MODAL).modal('open');
 	}
 
 	public onSelectPost():void {
-		jQuery('#postModal').modal('close');
+		jQuery(POST_MODAL).modal('close');
 	}
 
 }

@@ -5,6 +5,8 @@ declare const jQuery: any;
 const NEW_ALBUM:string = "#new_album";
 const SEL_ALBUM:string = "#select_album";
 
+const ALBUM_MODAL:string = "#albumModal";
+
 @Component({
 	selector: 'app-new-post',
 	templateUrl: './new-post.component.html',
@@ -22,7 +24,7 @@ export class NewPostComponent implements OnInit {
 	}
 
 	public openAlbumModal(): void {
-		jQuery('#albumModal').modal('open');
+		jQuery(ALBUM_MODAL).modal('open');
 		jQuery('ul.tabs').tabs();
 	}
 
@@ -36,12 +38,12 @@ export class NewPostComponent implements OnInit {
 
 	public onSaveAlbum():void {
 
-		jQuery('#albumModal').modal('close');
+		jQuery(ALBUM_MODAL).modal('close');
 	}
 
 	public onSelectAlbum():void {
 		
-		jQuery('#albumModal').modal('close');
+		jQuery(ALBUM_MODAL).modal('close');
 	}
 
 }
