@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { AlbumsComponent } from './pages/albums/albums.component';
 import { NewPostComponent } from './pages/posts/new-post/new-post.component';
+import { NewAlbumComponent } from './pages/albums/new-album/new-album.component';
 
 const routes:Routes = [
 	{
@@ -29,6 +30,10 @@ const routes:Routes = [
 	{
 		path:"albums",
 		component:AlbumsComponent
+	},
+	{
+		path:"albums/new",
+		component:NewAlbumComponent
 	}
 ];
 
@@ -40,7 +45,8 @@ const routes:Routes = [
     HomeComponent,
     PostsComponent,
     AlbumsComponent,
-    NewPostComponent
+    NewPostComponent,
+    NewAlbumComponent
   ],
   imports: [
     BrowserModule,
