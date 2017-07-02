@@ -32,7 +32,7 @@ ul.side-nav.fixed:hover {
 	color: rgba(0,0,0,.7);
 }
 .fa.fa-bars {
-	position: absolute;
+	position: fixed;
 	top: 10px;
 	left: 10px;
 	font-size: 20px;
