@@ -3,3 +3,27 @@
 	padding: 20px;
 	color: rgba(0,0,0,0.6);
 }
+
+/* label focus color */
+.input-field *:focus + label {
+	color: dodgerblue !important;
+}
+/* input color */
+.input-field * {
+	color: black;
+}
+/* label underline focus color */
+.input-field *:focus {
+	border-bottom: 1px solid dodgerblue !important;
+	box-shadow: 0 1px 0 0 dodgerblue !important;
+}
+textarea.materialize-textarea{
+	min-height: 1rem;
+	height: 1rem;
+}
+.switch label input[type=checkbox]:checked+.lever {
+	background-color: dodgerblue !important;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+	background-color: #75bbff !important;
+}
