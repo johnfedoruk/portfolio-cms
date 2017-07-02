@@ -36,3 +36,7 @@ textarea.materialize-textarea{
 .tabs .indicator {
 	background-color: dodgerblue;
 }
+
+.modal-overlay {
+	display:none !important;
+}
