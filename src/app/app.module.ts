@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { SideMenuComponent } from './partials/side-menu/side-menu.component';
 import { TopMenuComponent } from './partials/top-menu/top-menu.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PostsComponent } from './pages/posts/posts.component';
 
 const routes:Routes = [
 	{
@@ -22,7 +23,8 @@ const routes:Routes = [
     AppComponent,
     SideMenuComponent,
     TopMenuComponent,
-    HomeComponent
+    HomeComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
