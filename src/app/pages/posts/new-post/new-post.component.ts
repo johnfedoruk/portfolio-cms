@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 declare const jQuery: any;
 
-const NEW_ALBUM:string = "NEW_ALBUM";
-const SEL_ALBUM:string = "SEL_ALBUM";
+const NEW_ALBUM:string = "#new_album";
+const SEL_ALBUM:string = "#select_album";
 
 @Component({
 	selector: 'app-new-post',
@@ -23,6 +23,7 @@ export class NewPostComponent implements OnInit {
 
 	public openAlbumModal(): void {
 		jQuery('#albumModal').modal('open');
+		jQuery('ul.tabs').tabs();
 	}
 
 	public onOpenNewAlbum():void {

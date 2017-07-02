@@ -29,15 +29,15 @@
 			<div class="row">
 				<div class="col s12">
 					<ul class="tabs">
-						<li class="tab col s6"><a class="blue-text" href="#new_album" (click)="onOpenNewAlbum()">New Album</a></li>
-						<li class="tab col s6"><a class="blue-text" href="#select_album" (click)="onOpenSelectAlbum()">Select Album</a></li>
+						<li class="tab col s6"><a class="blue-text" (click)="onOpenNewAlbum()">New Album</a></li>
+						<li class="tab col s6"><a class="blue-text" (click)="onOpenSelectAlbum()">Select Album</a></li>
 					</ul>
 				</div>
-				<div id="new_album" class="col s12">
-
+				<div class="col s12" *ngIf="album_input_type==NEW_ALBUM">
+					new
 				</div>
-				<div id="select_album" class="col s12">
-
+				<div class="col s12" *ngIf="album_input_type==SEL_ALBUM">
+					sel
 				</div>
 			</div>
 		</div>
